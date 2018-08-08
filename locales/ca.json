@@ -135,10 +135,10 @@
   "cypress": {
     "tasks": {
         "test": {
-            "description": "Executar e2e tests amb `cypress run`",
+            "description": "Executar proves e2e amb `cypress run`",
             "headless": "Executar en mode headless sense interfície gràfica d'usuari",
             "mode": "Especifica el mode en el qual el servidor de desenvolupament hauria d'executar-se",
-            "url": "Ejecuta e2e tests fent servir la URL proporcionada en comptes del servidor automàtic de desenvolupament"
+            "url": "Executar proves e2e fent servir l'adreça URL proporcionada en comptes del servidor automàtic de desenvolupament"
         }
     }
   },
