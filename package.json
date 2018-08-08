@@ -1,0 +1,21 @@
+{
+  "name": "vue-cli-locale-ca",
+  "version": "0.0.1",
+  "description": "Catalan localization for @vue/cli",
+  "unpkg": "./locales/ca.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilherda/vue-cli-locale-ca.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue-cli",
+    "locale"
+  ],
+  "author": "David Villace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vilherda/vue-cli-locale-ca/issues"
+  },
+  "homepage": "https://github.com/vilherda/vue-cli-locale-ca#readme"
+}
