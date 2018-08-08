@@ -1,0 +1,495 @@
+{
+  "components": {
+    "connection-status": {
+      "disconnected": "Desconnectat del servidor UI",
+      "connected": "Connectat!"
+    },
+    "file-diff": {
+      "binary": "L'arxiu binari no es pot mostrar",
+      "actions": {
+        "open": "Obrir a l'editor"
+      }
+    },
+    "file-diff-view": {
+      "files-changed": "Arxius modificats",
+      "search-file": "Buscar arxiu",
+      "empty": "No s'han trobat canvis",
+      "modals": {
+        "commit": {
+          "title": "Registrar canvis",
+          "input": "Introduce un missatge",
+          "subtitle": "Registrar canvis al repositori",
+          "actions": {
+            "commit": "Guardar",
+            "cancel": "Cancel·lar"
+          }
+        }
+      },
+      "actions": {
+        "collapse-all": "Col·lapsar tot",
+        "expand-all": "Expandir tot",
+        "commit": "Guardar canvis",
+        "skip": "Ometre",
+        "continue": "Continuar",
+        "refresh": "Actualitzar"
+      }
+    },
+    "folder-explorer": {
+      "toolbar": {
+        "tooltips": {
+          "parent-folder": "Obrir directori pare",
+          "edit-path": "Modificar adreça de l'arxiu",
+          "favorite": "Marcar com a favorit",
+          "favorite-folders": "Directoris favorits",
+          "refresh": "Actualitzar"
+        },
+        "placeholder": "Introdueix l'adreça completa del directori",
+        "empty": "No hi ha directoris favorits"
+      }
+    },
+    "list-item-info": {
+      "more-info": "Més informació"
+    },
+    "logger-view": {
+      "title": "Activitat",
+      "empty": "No hi ha registres.",
+      "buttons": {
+        "clear": "Netejar activitat",
+        "scroll": "Desplaçar cap avall",
+        "close": "Tancar"
+      }
+    },
+    "progress-screen": {
+      "close": "Tancar"
+    },
+    "project-nav": {
+      "tooltips": {
+        "plugins": "Complements",
+        "configuration": "Configuració",
+        "tasks": "Tasques",
+        "more": "Més"
+      }
+    },
+    "project-select-list": {
+      "empty": "No ho ha projectes",
+      "titles": {
+        "favorite": "Projectes favorits",
+        "other": "Altres projectes"
+      }
+    },
+    "project-select-list-item": {
+      "tooltips": {
+        "favorite": "Marcar com a favorit",
+        "delete": "Eliminar"
+      }
+    },
+    "project-plugin-item": {
+      "version": "Versió",
+      "latest": "Darrera versió",
+      "official": "Oficial",
+      "installed": "Instal·lat",
+      "actions": {
+        "update": "Actualitzar {target}"
+      }
+    },
+    "prompt-list": {
+      "default": "Per defecte"
+    },
+    "prompts-list": {
+      "empty": "Sense configuració"
+    },
+    "status-bar": {
+      "project": {
+        "tooltip": "Projecte actual<br><i>Clic per activar el Gestor de projectes</i>",
+        "empty": "Sense projecte"
+      },
+      "path": {
+        "tooltip": "Directori de treball"
+      },
+      "log": {
+        "tooltip": "Activitat<br><i>Clic per activar l'activitat de Vue CLI</i>",
+        "empty": "Encara no hi ha activitat"
+      },
+      "report-bug": "Reportar un error",
+      "translate": "Ajudar amb la traducció"
+    },
+    "terminal-view": {
+      "buttons": {
+        "clear": "Netejar consola",
+        "scroll": "Desplaçar cap avall"
+      }
+    },
+    "top-bar": {
+      "no-favorites": "No hi ha projectes favorits"
+    },
+    "view-badge": {
+      "labels": {
+        "tasks": {
+          "error": "Error",
+          "running": "En execució",
+          "done": "Completat"
+        }
+      }
+    }
+  },
+  "cypress": {
+    "tasks": {
+        "test": {
+            "description": "Executar e2e tests amb `cypress run`",
+            "headless": "Executar en mode headless sense interfície gràfica d'usuari",
+            "mode": "Especifica el mode en el qual el servidor de desenvolupament hauria d'executar-se",
+            "url": "Ejecuta e2e tests fent servir la URL proporcionada en comptes del servidor automàtic de desenvolupament"
+        }
+    }
+  },
+  "mixins": {
+    "progress": {
+      "creating": "Creant projecte...",
+      "git-init": "Inicializant repositori amb git...",
+      "plugins-install":
+        "Instal·lant complements de Vue CLI. Això pot durar un moment...",
+      "invoking-generators": "Invocant generadors...",
+      "deps-install": "Instal·lant dependències adicionals...",
+      "completion-hooks": "Executant hooks per finalitzar...",
+      "fetch-remote-preset": "Recuperant preset de forma remota...",
+      "done": "Projecte creat correctament",
+      "plugin-install": "Instal·lant {arg0}...",
+      "plugin-uninstall": "Desinstal·lant {arg0}...",
+      "plugin-invoke": "Invocant {arg0}...",
+      "plugin-update": "Actualitzant {arg0}..."
+    }
+  },
+  "types": {
+    "task": {
+      "status": {
+        "idle": "Ocupat",
+        "running": "En execució",
+        "done": "Completat",
+        "error": "Error",
+        "terminated": "Finalizat"
+      }
+    }
+  },
+  "views": {
+    "project-select": {
+      "title": "Administrador de projectes Vue",
+      "tabs": {
+        "projects": "Projectes",
+        "create": "Crear",
+        "import": "Importar"
+      },
+      "buttons": {
+        "create": "Crear un nou projecte aquí",
+        "import": "Importar aquest directori"
+      }
+    },
+    "project-create": {
+      "title": "Crear un nou projecte",
+      "tabs": {
+        "details": {
+          "title": "Detalls",
+          "form": {
+            "folder": {
+              "label": "Directori del projecte",
+              "placeholder": "la-meva-app",
+              "tooltip": "Canviar directori del projecte",
+              "action": "Seleccionar aquest directori"
+            },
+            "manager": {
+              "label": "Gestor de paquets",
+              "default": "Per defecte"
+            },
+            "options": {
+              "label": "Opcions addicionals",
+              "description": "Sobrescriure directori de destí si ja existeix"
+            }
+          },
+          "buttons": {
+            "cancel": "Cancel·lar",
+            "next": "Següent"
+          },
+          "modal": {
+            "title": "Cancel·lar la creació del projecte",
+            "body": "Està segur que vols cancel·lar la creació del projecte?",
+            "buttons": {
+              "back": "Anar enrere",
+              "clear": "Netejar projecte"
+            }
+          }
+        },
+        "presets": {
+          "title": "Presets",
+          "default-preset": "Presets per defecte",
+          "description":
+            "Un preset es una associació de complements i configuracions. Després de que hagis seleccionat les característiques, opcionalment pots guardar-lo com a preset que pot ser reutilitzat en futurs projectes, sense tenir que configurar cadascun de nou",
+          "select": "Selecciona un preset",
+          "buttons": {
+            "previous": "Anterior",
+            "next": "Següent",
+            "create": "Crear projecte"
+          },
+          "manual": {
+            "description": "Seleccionar manualment les característiques",
+            "name": "Manual"
+          },
+          "modal": {
+            "title": "Configurar preset de forma remota",
+            "body": "Disponible molt aviat..."
+          },
+          "remote": {
+            "description": "Recupera un preset d'un repositori git",
+            "name": "Preset remot"
+          }
+        },
+        "features": {
+          "title": "Característiques",
+          "description":
+            "Tu podràs agregar característiques després d'haver creat el projecte mitjançant la instal·lació de complements.",
+          "enable": "Habilitar característiques",
+          "buttons": {
+            "previous": "Anterior",
+            "next": "Següent",
+            "create": "Crear projecte"
+          },
+          "userConfigFiles": {
+            "description": "Utilitzar arxius de configuració específics (com '.babelrc') en comptes d'utilitzar 'package.json'.",
+            "name": "Utilitzar arxius de configuració"
+          }
+        },
+        "configuration": {
+          "title": "Configuració",
+          "buttons": {
+            "previous": "Anterior",
+            "create": "Crear projecte"
+          },
+          "modal": {
+            "title": "Guardar com un nou preset",
+            "body": {
+              "title": "Nom del Preset",
+              "subtitle":
+                "Guardar las característiques i configuracions en un nou preset"
+            },
+            "buttons": {
+              "cancel": "Cancel·lar",
+              "continue": "Continuar sense guardar",
+              "create": "Crear un nou preset"
+            }
+          }
+        }
+      }
+    },
+    "project-plugins": {
+      "title": "Complements del projecte",
+      "button": "Agregar complement",
+      "heading": "Complements instal·lats"
+    },
+    "project-plugins-add": {
+      "title": "Agregar un complement",
+      "plugin": "Complement",
+      "tabs": {
+        "search": {
+          "label": "Cercar",
+          "search-input": "Cercar un complement",
+          "not-found": "No hi ha resultats",
+          "buttons": {
+            "cancel": "Cancel·lar",
+            "install": "Instal·lar {target}"
+          }
+        },
+        "configuration": {
+          "label": "Configuració",
+          "heading": "Instal·lació de {target}",
+          "buttons": {
+            "cancel": "Cancel·lar",
+            "finish": "Finalitzar instal·lació"
+          }
+        },
+        "diff": {
+          "label": "Arxius modificats"
+        }
+      },
+      "modal": {
+        "title": "Desinstal·lar {target}?",
+        "body": "Vols desinstal·lar el complement {target}?",
+        "buttons": {
+          "back": "Anar enrere",
+          "cancel": "Cancel·lar sense desinstal·lar",
+          "uninstall": "Desinstal·lar"
+        }
+      }
+    },
+    "project-configurations": {
+      "title": "Configuració del projecte"
+    },
+    "project-configuration-details": {
+      "actions": {
+        "cancel": "Cancel·lar",
+        "save": "Guardar canvis",
+        "more-info": "Més informació"
+      }
+    },
+    "project-tasks": {
+      "title": "Tasques del projecte"
+    },
+    "project-task-details": {
+      "actions": {
+        "play": "Executar tasca",
+        "stop": "Aturar tasca",
+        "close": "Tancar"
+      },
+      "command": "Comandes de Script",
+      "parameters": "Paràmetres",
+      "more-info": "Més informació",
+      "output": "Sortida",
+      "parameters-info": "Els paràmetres es guardaran quan la tasca sigui executada."
+    },
+    "about": {
+      "title": "Referent a",
+      "description":
+        "<a href=\"https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-ui\" target=\"_blank\">@vue/cli-ui</a> es un paquet intern de vue-cli que obre una full-blown UI.",
+      "quote":
+        "Vue-cli 3.x es una rescriptura completa, amb moltes característiques increïbles. Podràs escollir les caracteristiques com ara routing, Vuex o Typescript, llavors afegir i actualitzar blocs de construcció anomenats \"vue-cli plugins\". Però tenir moltes més opcions també significa que l'eina és més complexa i més difícil de començar a utilitzar. Per això, pensàvem que tenir una interfície gràfica completa ajudaria a descobrir les noves funcions, cercar i instal·lar plugins vue-cli i desbloquejar més possibilitats en general sense estar limitat per una interfície de terminal. En resum, vue-cli no només permet arrencar fàcilment un nou projecte, que també serà útil per treballs futurs posteriorment!",
+      "links": "Enllaços d'interés",
+      "back": "Anar enrere"
+    }
+  },
+  "vue-webpack": {
+    "dashboard": {
+      "title": "Panel de control",
+      "open-app": "Obrir l'aplicació",
+      "webpack-status": {
+        "Success": "Amb èxit",
+        "Failed": "Amb errors",
+        "Compiling": "Compilant",
+        "Invalidated": "Anul·lat",
+        "Idle": "Inactiu"
+      },
+      "build-status": {
+        "labels": {
+          "status": "Estat",
+          "errors": "Errors",
+          "warnings": "Advertencias",
+          "assets": "Recursos",
+          "modules": "Mòduls",
+          "deps": "Dependències"
+        }
+      },
+      "speed-stats": {
+        "title": "Estadístiques de velocitat"
+      },
+      "module-list": {
+        "title": "Dependències"
+      },
+      "asset-list": {
+        "title": "Recursos",
+        "size-warning":
+          "Aquest recurs es gran, considera utilitzar Code splitting per crear recursos més petits."
+      }
+    },
+    "analyzer": {
+      "title": "Analitzar",
+      "go-up": "Anar a dalt",
+      "go-home": "Anar a l'inici",
+      "chunk": "Chunk"
+    },
+    "sizes": {
+      "stats": "Stats",
+      "parsed": "Parsed",
+      "gzip": "Gzip",
+      "help":
+        "<b>Stats:</b> Tamany de les dades webpack stats.<br><b>Parsed:</b> Tamany del codi font extret (després dels plugins de minificació). Més acurat.<br><b>Gzip:</b> Tamany del codi font comprimit extret."
+    },
+    "tasks": {
+      "serve": {
+        "description": "Compilar i autorecarregar en desenvolupament.",
+        "host": "Especificar host",
+        "https": "Utilitzar HTTPS",
+        "mode": "Especificar mode de l'entorn",
+        "open": "Obrir navegador quan el servidor arrenqui",
+        "port": "Especificar port"
+      },
+      "inspect": {
+        "description": "Inspeccionar el resultat de la configuració de webpack",
+        "mode": "Especiificar mode de l'entorn",
+        "verbose": "Mostrar definicions de funcions completes a la sortida"
+      },
+      "build": {
+        "description": "Compilar i minificar per producció.",
+        "dest": "Directori de destin",
+        "mode": "Especificar mode de l'entorn",
+        "name": "Nom pel mode llibreria o component web (per defecte: 'name' en package.json o el nom del arxiu de entrada)",
+        "target": {
+            "app": "Aplicació web",
+            "description": "Objetiu de compilació",
+            "lib": "Llibreria",
+            "wc": "Component web",
+            "wc-async": "Component web asíncron"
+        },
+        "watch": "Observar canvis"
+      }
+    }
+  },
+  "eslint": {
+    "config": {
+      "eslint": {
+        "description": "Verificació d'errors & Qualitat del códi",
+        "groups": {
+          "strongly-recommended": "Molt recomanable",
+          "recommended": "Recomanable"
+        }
+      },
+      "eslint-extra": {
+        "description": "Configuració extra per ESLint",
+        "lintOnSave": {
+          "description": "Verifica el fitxer quan es guardi",
+          "message": "Verificar al guardar"
+        }
+      }
+    },
+    "tasks": {
+      "lint": {
+        "description": "Lints i correcció d'arxius",
+        "noFix": "No corregir errors"
+      }
+    }
+  },
+  "nightwatch": {
+    "tasks": {
+        "test": {
+            "description": "Executar proves e2e amb nightwatch",
+            "url": "Executar proves e2e fent servir l'adreça URL proporcionada en comptes del servidor automàtic de desenvolupament"
+        }
+    }
+  },
+  "pwa": {
+    "config": {
+      "pwa": {
+        "appleMobileWebAppStatusBarStyle": {
+            "description": "Estil per la barra d'estat d'una aplicació web en iOS",
+            "message": "Estil per la barra d'estat dels mòbils Apple"
+        },
+        "backgroundColor": {
+            "description": "Color de fons utilitzat per la pantalla inicial de l'aplicació",
+            "message": "Color de fons de la pantalla inicial"
+        },
+        "description": "Progressive Web App",
+        "msTileColor": {
+            "description": "Color utilitzat por la icona de l'aplicació en Windows",
+            "message": "Color de la icona de l'aplicació en Windows"
+        },
+        "name": {
+            "description": "Nom de l'aplicació mostrat en la pantalla inicial entre d'altres llocs. Utilitzat també com el valor per l'etiqueta meta `apple-mobile-web-app-title` a l'HTML generat.",
+            "message": "Nom de l'apliació"
+        },
+        "themeColor": {
+            "description": "Color utilitzat al tema del navegador",
+            "message": "Tema de color"
+        },
+        "workboxPluginMode": {
+            "description": "Això el permet escollir entre dos modes compatibles amb el subjacent `workbox-webpack-plugin`",
+            "message": "Mode complement"
+        }
+    }
+    }
+  }
+}
