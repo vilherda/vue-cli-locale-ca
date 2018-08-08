@@ -17,7 +17,7 @@
       "modals": {
         "commit": {
           "title": "Registrar canvis",
-          "input": "Introduce un missatge",
+          "input": "Introdueix un missatge",
           "subtitle": "Registrar canvis al repositori",
           "actions": {
             "commit": "Guardar",
