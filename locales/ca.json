@@ -12,7 +12,7 @@
     },
     "file-diff-view": {
       "files-changed": "Arxius modificats",
-      "search-file": "Buscar arxiu",
+      "search-file": "Cercar arxiu",
       "empty": "No s'han trobat canvis",
       "modals": {
         "commit": {
