@@ -410,12 +410,12 @@
       },
       "inspect": {
         "description": "Inspeccionar el resultat de la configuració de webpack",
-        "mode": "Especiificar mode de l'entorn",
+        "mode": "Especificar mode de l'entorn",
         "verbose": "Mostrar definicions de funcions completes a la sortida"
       },
       "build": {
         "description": "Compilar i minificar per producció.",
-        "dest": "Directori de destin",
+        "dest": "Directori de destí",
         "mode": "Especificar mode de l'entorn",
         "name": "Nom pel mode llibreria o component web (per defecte: 'name' en package.json o el nom del arxiu de entrada)",
         "target": {
@@ -449,7 +449,7 @@
     "tasks": {
       "lint": {
         "description": "Lints i correcció d'arxius",
-        "noFix": "No corregir errors"
+        "noFix": "No corretgir errors"
       }
     }
   },
@@ -472,10 +472,10 @@
             "description": "Color de fons utilitzat per la pantalla inicial de l'aplicació",
             "message": "Color de fons de la pantalla inicial"
         },
-        "description": "Progressive Web App",
+        "description": "Aplicacions Web Progressives",
         "msTileColor": {
-            "description": "Color utilitzat por la icona de l'aplicació en Windows",
-            "message": "Color de la icona de l'aplicació en Windows"
+            "description": "Color utilitzat por la icona de l'aplicació Windows",
+            "message": "Color de la icona de l'aplicació Windows"
         },
         "name": {
             "description": "Nom de l'aplicació mostrat en la pantalla inicial entre d'altres llocs. Utilitzat també com el valor per l'etiqueta meta `apple-mobile-web-app-title` a l'HTML generat.",
@@ -486,7 +486,7 @@
             "message": "Tema de color"
         },
         "workboxPluginMode": {
-            "description": "Això el permet escollir entre dos modes compatibles amb el subjacent `workbox-webpack-plugin`",
+            "description": "Això el permet escollir entre els dos modes compatibles amb el subjacent `workbox-webpack-plugin`",
             "message": "Mode complement"
         }
     }
