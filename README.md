@@ -6,4 +6,4 @@ This will be automatically loaded by vue-cli.
 
 ## :copyright: License
 
-[MIT](http://opensource.org/licenses/MIT)
+[CC0-1.0 License](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
