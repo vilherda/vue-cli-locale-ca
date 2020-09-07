@@ -1,7 +1,19 @@
 {
     "org": {
         "vue": {
+            "common": {
+                "close": "Tancar",
+                "cancel": "Cancel·lar",
+                "back": "Tornar enrerra",
+                "more-info": "Més informació",
+                "show-more": "Mostra més",
+                "show-less": "Mostra menys"
+            },
             "components": {
+                "client-addon-component": {
+                    "timeout": "Temps d'espera exhaurit càrregant del component",
+                    "timeout-info": "El component particularitzat està prenent masa temps per carregar-se, pot haver-hi un error"
+                },
                 "connection-status": {
                     "disconnected": "Desconnectat del servidor UI",
                     "connected": "Connectat!"
@@ -78,6 +90,7 @@
                 },
                 "project-nav": {
                     "tooltips": {
+                        "dashboard": "Dashboard",
                         "plugins": "Complements",
                         "dependencies": "Dependències",
                         "configuration": "Configuració",
@@ -99,13 +112,27 @@
                         "open-in-editor": "Obrir a l'editor"
                     }
                 },
+                "project-rename": {
+                    "title": "Renombrar",
+                    "name-field": {
+                        "title": "Nom",
+                        "subtitle": "Introduïr el nou nom"
+                    },
+                    "submit": "Renombrar"
+                },
                 "project-plugin-item": {
                     "version": "versió",
                     "latest": "darrera versió",
                     "official": "Oficial",
                     "installed": "Instal·lat",
                     "actions": {
-                        "update": "Actualitzar {target}"
+                        "update": "Actualitzar {target}",
+                        "refresh": "Forçar refresc {target}<br><i>Prem [Shift] per un Refresc Ràpid (node_modules no es refrescarà)</i>"
+                    },
+                    "local": "Local",
+                    "features": {
+                        "generator": "Aquest complement te un generador i pot modificar els fitxers del teu projecte y afegir-ne de nous per tu.",
+                        "ui-integration": "Aquest complement inclou característiques de UI adicionals com tasques millorades, pantalles de configuració, controls al tauler de control, ..."
                     }
                 },
                 "project-dependency-item": {
@@ -174,6 +201,24 @@
                             "done": "Completat"
                         }
                     }
+                },
+                "widget": {
+                    "remove": "Eliminar control",
+                    "configure": "Configurar control",
+                    "save": "Guardar",
+                    "reset-config": "Reiniciar configuració",
+                    "open-details": "Mostrar més"
+                },
+                "widget-add-pane": {
+                    "title": "Afegir control"
+                },
+                "widget-add-item": {
+                    "add": "Afegir control",
+                    "details": {
+                        "title": "Detalls del control",
+                        "max-instances": "Màxim contador d'instancies: {count}/{total}",
+                        "unlimited": "Il·limitat"
+                    }
                 }
             },
             "mixins": {
@@ -225,7 +270,8 @@
                             "title": "Missing modules",
                             "message": "It seems the project is missing the 'node_modules' folder. Si-us-plau comprovi que ha instal·lat les dependencies abans de la importarció.",
                             "close": "Got it"
-                        }
+                        },
+                        "force": "Importar de totes maneres"
                     }
                 },
                 "project-create": {
@@ -248,8 +294,8 @@
                                 },
                                 "options": {
                                     "label": "Opcions addicionals",
-                                    "description": "Sobrescriure directori de destí si ja existeix",
                                     "force": "Sobrescriure el directori destí si ja existeix",
+                                    "bare": "Generar projecte sense instruccions per a principiants",
                                     "git-title": "Repositori Git",
                                     "git": "Initialitzar el repository git (recomanat)",
                                     "git-commit-message": "Missatge inicial de commit (opcional)"
@@ -270,7 +316,6 @@
                         },
                         "presets": {
                             "title": "Presets",
-                            "default-preset": "Presets per defecte",
                             "description": "Un preset es una associació de complements i configuracions. Després de que hagis seleccionat les característiques, opcionalment pots guardar-lo com a preset que pot ser reutilitzat en futurs projectes, sense tenir que configurar cadascun de nou",
                             "select": "Selecciona un preset",
                             "buttons": {
@@ -297,7 +342,9 @@
                                 "clone": "Cloner/Private repository",
                                 "cancel": "Cancel·lar",
                                 "done": "Fet"
-                            }
+                            },
+                            "default-preset": "Preconfiguració predetermninada",
+                            "default-preset-vue-3-preview": "Preconfiguració predetermninada (previsualització Vue 3)"
                         },
                         "features": {
                             "title": "Característiques",
@@ -336,12 +383,12 @@
                 },
                 "project-plugins": {
                     "title": "Complements del projecte",
-                    "button": "Agregar complement",
+                    "button": "Afegir complement",
                     "heading": "Complements instal·lats",
                     "update-all": "Actualitzar tots els complements"
                 },
                 "project-plugins-add": {
-                    "title": "Agregar un complement",
+                    "title": "Afegir un complement",
                     "plugin": "Complement",
                     "tabs": {
                         "search": {
@@ -374,6 +421,15 @@
                             "cancel": "Cancel·lar sense desinstal·lar",
                             "uninstall": "Desinstal·lar"
                         }
+                    },
+                    "buttons": {
+                        "add-local": "Localitzar el complement local"
+                    }
+                },
+                "project-plugin-add-local": {
+                    "title": "Afegir complement local",
+                    "buttons": {
+                        "add": "Afegir complement local"
                     }
                 },
                 "project-configurations": {
@@ -401,7 +457,10 @@
                     "parameters": "Paràmetres",
                     "more-info": "Més informació",
                     "output": "Sortida",
-                    "parameters-info": "Els paràmetres es guardaran quan la tasca sigui executada."
+                    "override-args": {
+                        "message": "Sobreescriure els arguments definits",
+                        "description": "Si s'activa, els arguments definits al teu fixer package.json seran substituïts pels valors definits continuació"
+                    }
                 },
                 "project-dependencies": {
                     "title": "Dependències del projecte",
@@ -422,6 +481,14 @@
                         "cancel": "Cancel·lar",
                         "uninstall": "Desinstal·lar {id}"
                     }
+                },
+                "project-dashboard": {
+                    "title": "Tauler de control del projecte",
+                    "cutomize": "Particularitzar",
+                    "done": "Fet"
+                },
+                "settings": {
+                    "title": "Configuracions"
                 },
                 "about": {
                     "title": "Referent a",
@@ -504,16 +571,16 @@
                     },
                     "build": {
                         "description": "Compilar i minificar per producció.",
+                        "mode": "Especificar el mode de l'entorn",
                         "dest": "Directori de destí",
-                        "mode": "Especificar mode de l'entorn",
-                        "name": "Nom pel mode llibreria o component web (per defecte: 'name' en package.json o el nom del arxiu de entrada)",
                         "target": {
-                            "app": "Aplicació web",
                             "description": "Objetiu de compilació",
+                            "app": "Aplicació web",
                             "lib": "Llibreria",
                             "wc": "Component web",
                             "wc-async": "Component web asíncron"
                         },
+                        "name": "Nom pel mode llibreria o component web (per defecte: entrada 'name' del fitxer package.json o el nom del arxiu de entrada)",
                         "watch": "Observar canvis",
                         "modern": {
                             "label": "Modern mode",
@@ -533,9 +600,9 @@
                             "general": "Configuració general",
                             "css": "Configuració CSS"
                         },
-                        "baseUrl": {
-                            "label": "Adreça URL base",
-                            "description": "L'adreça URL base on l'aplicació es desplegarà, per exemple '/my-app/'. Utilitzant una cadena de text buida (''), tots els recursos seran vinculats amb \"path\" relatiu."
+                        "publicPath": {
+                            "label": "Adreça pública",
+                            "description": "La URL pública on la teva aplicació serà desplegada, per exemple '/meva-app/'. Fes servir una cadena de text buida ('') i llavors totes els elements seran vinculats amb adreces relatives."
                         },
                         "outputDir": {
                             "label": "Directori de sortida",
@@ -574,7 +641,7 @@
                     }
                 },
                 "suggestions": {
-                    "vue-config-open": "Open vue config"
+                    "vue-config-open": "Obrir la configuració de Vue"
                 }
             },
             "eslint": {
@@ -592,7 +659,7 @@
                             "off": "Apagat",
                             "error": "Error",
                             "warning": "Avís",
-                            "custom": "Particular"
+                            "custom": "Particularitzat"
                         },
                         "general": {
                             "label": "General",
@@ -608,13 +675,6 @@
                         "rules": {
                             "label": "Regles"
                         }
-                    },
-                    "eslint-extra": {
-                        "description": "Configuració extra per ESLint",
-                        "lintOnSave": {
-                            "description": "Verifica el fitxer quan es guardi",
-                            "message": "Verificar al guardar"
-                        }
                     }
                 },
                 "tasks": {
@@ -626,16 +686,6 @@
                 "suggestions": {
                     "open-eslintrc": {
                         "label": "Obrir eslintrc"
-                    }
-                }
-            },
-            "nightwatch": {
-                "tasks": {
-                    "test": {
-                        "description": "Executar proves e2e amb nightwatch",
-                        "url": "Executar proves e2e fent servir l'adreça URL proporcionada en comptes del servidor automàtic de desenvolupament",
-                        "config": "Utilitzar particularització de l'arxiu de configuració de nightwatch (sobrescriu valors predeterminats)",
-                        "env": "Entorns de navegador per executar delimitat per comes"
                     }
                 }
             },
@@ -666,6 +716,10 @@
                         "appleMobileWebAppStatusBarStyle": {
                             "message": "Estil per la barra d'estat dels mòbils Apple",
                             "description": "Estil per la barra d'estat d'una aplicació web en iOS"
+                        },
+                        "manifestCrossorigin": {
+                            "message": "Valor per l'atribut `crossorigin` pel tag de l'enllaç al fitxer manifest.json",
+                            "description": "Valor per l'atribut `crossorigin` del tag del enllaç del manifest al HTML generat, necessitaras definir-ho si la teva PWA està darrera d'un proxy amb autenticació"
                         }
                     }
                 },
@@ -688,6 +742,16 @@
                     }
                 }
             },
+            "nightwatch": {
+                "tasks": {
+                    "test": {
+                        "description": "Executar les proves e2e amb nightwatch",
+                        "url": "Executar les proves e2e contra una URL donada en comptes de servidor de desenvolupament autoexecutat",
+                        "config": "Fer servir un fitxer de configuració per nightwatch particularitzat (sobreescriu els valors propis)",
+                        "env": "Entorns on executar delimitats per comes"
+                    }
+                }
+            },
             "jest": {
                 "tasks": {
                     "test": {
@@ -703,6 +767,103 @@
                     "test": {
                         "description": "Executar proves unitaries amb Mocha",
                         "watch": "Vigilar canvis als arxius i tornar a executar proves reacionades amb le arxius modificats"
+                    }
+                }
+            },
+            "widgets": {
+                "welcome": {
+                    "title": "Consells de benvinguda",
+                    "description": "Alguns consells per ajudar-te a començar",
+                    "content": {
+                        "title": "Benvingut al teu nou projecte!",
+                        "tip1": "Estas cercant al tauler de control del projecte on pots afegir controls. Fes servir el botó 'Particularitzar' per afegir més! Tot es guardat automàticament",
+                        "tip2": "A l'esquerra hi son les diferents pàgines disponibles. 'Complements' et permet afegir nous complements per Vue CLI, 'Dependencies' administrar paquets, 'Configuració' configurar les eines i 'Tasques' executar scripts (per exemple webpack).",
+                        "tip3": "Tornar al administrador de projectes amb el desplegable que hi ha a dalt a l'esquerra de la pàgina o amb el botó 'casa' a la barra d'estat al peu.",
+                        "ok": "Entesos"
+                    }
+                },
+                "kill-port": {
+                    "title": "Port d'autrada",
+                    "description": "Aturar processos mitjançant un port de xarxa específic",
+                    "input": {
+                        "placeholder": "Introduïr un port de xarxa"
+                    },
+                    "kill": "Aturar",
+                    "status": {
+                        "idle": "Preparat per aturar",
+                        "killing": "Aturant procés...",
+                        "killed": "Aturat amb èxit!",
+                        "error": "No es pot aturar el procés"
+                    }
+                },
+                "status-widget": {
+                    "last-updated": "Actuaitzat",
+                    "never": "Encara no està actualitzat",
+                    "check": "Comprovant actualitzacions",
+                    "more-info": "Més detalls"
+                },
+                "plugin-updates": {
+                    "title": "Actualització de compplements",
+                    "description": "Monitoritzar actualitacions de complements",
+                    "messages": {
+                        "ok": "Tots els complements estan actualitzats",
+                        "loading": "Comprovant si hi ha actualitzacions...",
+                        "attention": "Hi han {n} actualitzacions de complements disponibles"
+                    },
+                    "page": "Anar a Complements"
+                },
+                "dependency-updates": {
+                    "title": "Actualitzacions de dependències",
+                    "description": "Monitoritzar actualitzacions de dependències",
+                    "messages": {
+                        "ok": "Totes les dependències estan actualizades",
+                        "loading": "Comprovant actualitzacions...",
+                        "attention": "Hi han {n} actualitzacions de dependències disponibles"
+                    },
+                    "page": "Anar a Dependències"
+                },
+                "vulnerability": {
+                    "title": "Comprovació de vulnerabilitats",
+                    "description": "Comprovar si hi han noves vulnerabilitats a les depedències del teu projecte",
+                    "messages": {
+                        "ok": "No s'han trobat vulnerabilitats",
+                        "loading": "Auditant seguretat del projecte...",
+                        "attention": "S'han trobat {n} vulnerabilitats",
+                        "error": "No es poden comprovar les vulnerabilitats"
+                    },
+                    "severity": {
+                        "critical": "Severitat critica",
+                        "high": "Severitat alta",
+                        "moderate": "Severitat mitjana",
+                        "low": "Severitat baixa"
+                    },
+                    "direct-dep": "Dependència directa",
+                    "versions": {
+                        "vulnerable": "Versions vulnerables:",
+                        "patched": "Versions amb pegats:"
+                    },
+                    "recheck": "comprovar altra vegada"
+                },
+                "run-task": {
+                    "title": "Executar tasca",
+                    "description": "Drecera per executar tasca",
+                    "prompts": {
+                        "task": "Selecciona una tasca"
+                    },
+                    "page": "Anar a Tasques"
+                },
+                "news": {
+                    "title": "Servei de notícies",
+                    "description": "Llegir el servei de notícies",
+                    "refresh": "Forçar refresc",
+                    "select-tip": "Seleccionar un element a l'esquerra",
+                    "prompts": {
+                        "url": "Adreça del servei de noticíes RSS o repositori GitHub"
+                    },
+                    "errors": {
+                        "fetch": "No es pot recuperar flux de notícies",
+                        "offline": "Estàs desconnectat/fora de línia",
+                        "empty": "Flux de notícies buit"
                     }
                 }
             }
