@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-locale-ca",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Catalan localization for @vue/cli",
   "unpkg": "./locales/ca.json",
   "repository": {
