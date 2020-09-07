@@ -8,12 +8,15 @@
     "url": "git+https://github.com/vilherda/vue-cli-locale-ca.git"
   },
   "keywords": [
+    "vue",
+    "i18n",
     "vuejs",
     "vue-cli",
-    "locale"
+    "locale",
+    "catalan"
   ],
   "author": "vilherda",
-  "license": "MIT",
+  "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/vilherda/vue-cli-locale-ca/issues"
   },
